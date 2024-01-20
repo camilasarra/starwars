@@ -48,7 +48,7 @@ const Starships = () => {
 
   return (
     <div>
-      <Table columns={columns} data={data.results.slice(0)} /* :D */ />
+      <Table columns={columns} data={data.results.slice(0)} />
     </div>
   );
 };
