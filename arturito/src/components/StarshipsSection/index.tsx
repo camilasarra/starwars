@@ -3,7 +3,6 @@ import useSWR from 'swr';
 import { swGet } from '../../utils/fetcher';
 import Table from '../Table';
 
-
 const columns = [
   {
     title: 'Name',
@@ -37,7 +36,6 @@ const columns = [
   },
 ];
 
-
 const Starships = () => {
   const { data, error } = useSWR('/starships', swGet);
 
@@ -53,6 +51,6 @@ const Starships = () => {
       <Table columns={columns} data={data.results.slice(0)} /* :D */ />
     </div>
   );
-}
+};
 
 export default Starships;
